@@ -5,9 +5,9 @@
   <% @locations.each do |location| %>
   <div class="location">
     <h2> City: <%= link_to location.title, location_path(location.id)%></h2>
-    <p> Subtitle: <%=location.subtitle%></p>
-    <p> Description:</p>
-    <p>Picture: <%= image_tag(location.image_header, width:80) %>  </p>
+    <p><strong>Picture:</strong><br><%= image_tag(location.header_image, width:300) %>  </p>
+    <p><strong>Subtitle:</strong><br> <%=location.subtitle%></p>
+    <p><strong>Description:</strong><br><%=location.description%></p>
   </div>
   <hr/>
   <% end %>

@@ -1,9 +1,11 @@
 <h1>City: <%=@location.title %> - <%=@location.subtitle %></h1>
-<p>Description: <p>
 <br>
-<p><strong>Picture:</strong><%= image_tag(@location.image, width:100) %> <p>
+<p><strong>Picture:</strong><br><%= image_tag(@location.header_image, width:350) %> <p>
 <br>
+<p><strong>Description:</strong><br> <%=@location.description %> <p>
 <hr>
 <%=link_to "Edit this location", edit_location_path(@location)%>
+<br>
+<%=link_to "Delete this location", location_path(@location), method: :delete, data: {confirm: 'Are you sure?'}%>
 <br>
 <%= link_to "Back to locations index", locations_path%>

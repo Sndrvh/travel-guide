@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   patch 'locations/:id',to: 'locations#update'
 
+  delete 'locations/:id', to: 'locations#destroy'
 
   # root to: 'locations#show'
   # get '/locations/morioka', to: "locations#show", as: "locations"

@@ -1,5 +1,5 @@
 class Location < ApplicationRecord
   validates :title, presence: :true
   validates :subtitle, presence: :true
-  mount_uploader :image, ImageUploader
+  mount_uploader :header_image, ImageUploader
 end
