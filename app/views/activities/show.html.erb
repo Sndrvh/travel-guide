@@ -1,0 +1,13 @@
+<h1>Activity: <%=@activity.title %></h1>
+<br>
+<p><strong>Location:</strong> <%=@activity.location_id%>
+<p><strong>Description:</strong><br> <%=@activity.description %> <p>
+<br>
+<p><strong>Picture:</strong><br><%= image_tag(@activity.image, width:300) %> <p>
+<br>
+<hr>
+<%=link_to "Edit this activity", edit_activity_path(@activity)%>
+<br>
+<%=link_to "Delete this activity", activity_path(@activity), method: :delete, data: {confirm: 'Are you sure?'}%>
+<br>
+<%= link_to "Back to activities index", activities_path%>
