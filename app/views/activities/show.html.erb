@@ -1,6 +1,6 @@
 <h1>Activity: <%=@activity.title %></h1>
 <br>
-<p><strong>Location:</strong> <%=@activity.location_id%>
+<p><strong>Location:</strong> <%=@activity.location.title%>
 <p><strong>Description:</strong><br> <%=@activity.description %> <p>
 <br>
 <p><strong>Picture:</strong><br><%= image_tag(@activity.image, width:300) %> <p>
